@@ -1,0 +1,85 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgb(13, 13, 14) 0%, rgba(0, 0, 0, 0) 70%),
+        /* niebieski */
+        radial-gradient(ellipse at center, rgb(194, 81, 81) 0%, rgba(0, 0, 0, 0) 70%),
+        /*czerwony */
+        radial-gradient(ellipse at center, rgb(255, 0, 0) 0%, rgba(0, 0, 0, 0) 70%)
+        /*zielony */
+        #3f0f0f;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-size:
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment:unset;
+
+    animation: bganimation 30s infinite;
+    ;
+    color: white;
+}
+
+#button {
+    padding: 5px;
+    left: 570px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 260ms;
+    max-width: 100px;
+    height: 20px;
+    text-align: center;
+    margin-left: 5%;
+    background: white;
+    color: black;
+    position: relative;
+}
+
+#button:hover {
+    transform: scale(2.5);
+}
+
+#memes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#memes div {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    height: auto;
+    width: 250px;
+}
+
+#memes div h4 {
+    padding: 5px;
+    text-align: center;
+    background: none;
+    color: white;
+    border-radius: 8px;
+    margin: 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    transition: 200ms;
+}
+
+img:hover {
+    border-radius: 0px;
+    transform: scale(1.5);
+}
